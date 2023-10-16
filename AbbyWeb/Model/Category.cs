@@ -1,13 +1,19 @@
-﻿namespace AbbyWeb.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AbbyWeb.Model
 {
+    /// <summary>
+    /// Таблица в БД
+    /// </summary>
     public class Category
     {
-
+        [Key] //Первичный ключ.
         /// <summary>
         /// Индентификатор
         /// </summary>
         public int Id { get; set; }
 
+        [Required] //Обязательный параметр
         /// <summary>
         /// Наименование категории
         /// </summary>
